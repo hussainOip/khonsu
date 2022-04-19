@@ -4,7 +4,7 @@ const { stringify } = require("nodemon/lib/utils");
 const poolSchema = new mongoose.Schema(
  {  user_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'user'
+    ref: 'User'
  },
  name: String,
  unit: String,

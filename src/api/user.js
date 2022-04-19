@@ -1,10 +1,13 @@
 var express = require('express');
 var Router = express.Router();
+var userController = require('../controllers/userController')
+
+// var router = function () {
+//     return Router
+// }
+Router.post("/create", userController.create)
+
+Router.get("/get/:id", userController.get)
 
 
-var router = function(){
-   
-    return Router
-}
-
-module.exports = router();
+module.exports = Router;
